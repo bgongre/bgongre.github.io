@@ -1,0 +1,169 @@
+.navbar {
+  /*Information for Navbar*/
+  background-color: rgb(179, 217, 255);
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 0 10px 0;
+}
+
+a:link {
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.aboutbackground {
+  /*background image of the chattahoochee River*/
+  background: url("http://res.cloudinary.com/bgongre/image/upload/v1500208605/IMG_20170527_164116_zpsvfy6z8ma_w0ayy8.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 70px;
+}
+
+.name {
+  padding-top: 75px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.picture {
+  text-align: center;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.positionTitle {
+  padding-top:10px;
+  padding-bottom: 15px;
+}
+
+.aboutinfo {
+  background-color: rgba(204, 221, 255, 0.6);
+  text-align: center;
+  width: 50%;
+  padding: 15px;
+  margin: auto;
+}
+
+.whitespacebottom {
+  /*way to remove white space between aboutinfo and skills page when setting padding*/
+  width: 100%;
+  margin: auto;
+  padding-bottom: 25px;
+}
+
+#workhistory {
+  background-color: rgb(255, 166, 77);
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+}
+#leftcolumn, #rightcolumn {
+  float: left;
+  min-height: 150px;
+}
+#leftcolumn {
+  width: 20%;
+}
+#rightcolumn {
+  width: 80%;
+  margin: auto;
+
+}
+
+ul {
+  text-align: left;
+  width: 100%;
+  margin: 0;
+}
+
+#skills{
+  text-align:center;
+  padding-top:70px;
+  padding-bottom: 15px;
+  margin: auto;
+}
+
+#skillsList {
+  background-color: rgb(255, 166, 77);
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+}
+
+.container > div {
+  flex: 1; /*grow*/
+}
+
+.educationbackground {
+  /*Background image of University of South Florida entrance*/
+  background: url("http://res.cloudinary.com/bgongre/image/upload/v1500208605/University-of-South-Florida-4_zpsfbjutr2v_ttvtnp.jpg");
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.whitespacetop {
+  /*removes white space between skills and education page when setting padding*/
+  width: 100%;
+  margin: auto;
+  padding-top: 90px;
+}
+
+.educationinfo {
+  text-align: center;
+  font-weight: bold;
+  width: 50%;
+  margin: auto;
+  padding: 25px;
+  padding-top: 30px;
+  background-color: rgba(204, 221, 255, 0.6);
+}
+
+#contact {
+  background-color: rgb(179, 217, 255);
+  text-align: left;
+  width: 50%;
+  margin: auto;
+  padding: 25px;
+  padding-top: 60px;
+}
+
+.resume {
+  text-align: left;
+  padding-right: 20%;
+}
+
+.i {
+  margin-left: 10px;
+  font-size: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+footer {
+  text-align: center;
+  font-size: 9pt;
+  background-color: rgb(179, 217, 255);
+  padding-bottom: 1px;
+}
