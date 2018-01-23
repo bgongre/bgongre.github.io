@@ -3,8 +3,10 @@
   background-color: rgb(179, 217, 255);
   padding: 10px;
   font-weight: bold;
-  text-align: center;
   box-shadow: 0 0 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
 }
 
 a:link {
@@ -23,6 +25,16 @@ a:link {
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 70px;
+  text-align: center;
+}
+
+.aboutbackground h4 {
+  font-weight: bold;
+  color: #fff;
+}
+
+div p:first-child {
+  font-weight: bold;
 }
 
 .name {
@@ -38,7 +50,7 @@ a:link {
 }
 
 .positionTitle {
-  padding-top:10px;
+  padding-top: 10px;
   padding-bottom: 15px;
 }
 
@@ -63,25 +75,31 @@ a:link {
   width: 100%;
   margin: auto;
   padding: 10px;
-  padding-top: 20px;
+  padding-top: 70px;
 }
 
-#wrapper {
-    width: 80%;
-    margin: 0 auto;
-    display: table;
+.workhistory-background {
+  background-color: rgb(255, 166, 77);
 }
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: table;
+}
+
 #leftcolumn, #rightcolumn {
   float: left;
   min-height: 150px;
 }
+
 #leftcolumn {
   width: 20%;
 }
+
 #rightcolumn {
   width: 80%;
   margin: auto;
-
 }
 
 ul {
@@ -90,11 +108,15 @@ ul {
   margin: 0;
 }
 
-#skills{
-  text-align:center;
-  padding-top:70px;
+#skills {
+  text-align: center;
+  padding-top: 70px;
   padding-bottom: 15px;
   margin: auto;
+}
+
+.skills-background {
+  background-color: rgb(255, 166, 77);
 }
 
 #skillsList {
@@ -109,8 +131,9 @@ ul {
   display: flex;
 }
 
-.container > div {
-  flex: 1; /*grow*/
+.container>div {
+  flex: 1;
+  /*grow*/
 }
 
 .educationbackground {
@@ -147,6 +170,10 @@ ul {
   margin: auto;
   padding: 25px;
   padding-top: 60px;
+}
+
+.contact-background {
+  background-color: rgb(179, 217, 255);
 }
 
 .resume {
