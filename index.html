@@ -3,56 +3,53 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Brittani Gongre Resume</title>
-  <link rel="stylesheet" type="text/css" href="resume.css">
-  <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Resume Re-Worked</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-
-  <nav class="navbar navbar-expand-lg fixed-top">
-        <ul class="nav navbar-nav d-flex justify-content-center">
-          <li><a href="#about">about</a></li>
-          <li><a href="#workhistory">work history</a></li>
-          <li><a href="#skills">skills</a></li>
-          <li><a href="#education">education</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
-  </nav>
-  <div id="about">
-    <div class="aboutbackground">
-      <div>
-        <h2 class="name">Brittani Gongre</h2>
-        <div>
-          <img src="http://res.cloudinary.com/bgongre/image/upload/v1500208605/face_zps22mkapi0_aku1rd.png" class="picture" alt="picture of me at Chattahoochee Rec Park" align="center" title="Chattahoochee Rec Park"></img>
-          <div class="positionTitle">
-            <h4>FRONT END || DESKTOP SUPPORT || ENGINEER</h4>
-          </div>
-        </div>
-      </div>
-      <div class="whitespacebottom">
-        <!--
-    -->
-        <div class="aboutinfo">
-          <p>New to the Atlanta area, I am a Florida native and a student in the College of Engineering at University of South Florida going towards a B.S. in Information Technology. Using sites such as freecodecamp, codecademy, W3schools, among others I
-            have self taught front end skills. Through my university I have taken classes in database management and programming with Java. I have been working in the IT field for 6+ years now.
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="workhistory-background">
-    <div id="workhistory">
-      <p>
-        <font size="5"><b>Work History</b></font>
-      </p>
+  <article id="intro">
+    <h1>Brittani Gongre</h1>
+    <h2>Junior Developer // Technical Support</h2>
+  </article>
+<!--Projects-->
+  <article id="projects">
+    <section id="sites" class="sample-sites">
+      <h2>Sample Projects</h2>
+      <ul>
+        <li>
+          <a href="https://bgongre.github.io/RGB-Color-Game/">
+          <img src="http://res.cloudinary.com/bgongre/image/upload/v1517836962/RGBColorGame_tgozhk.jpg" alt="RGB-Color-Game">
+        </a>
+        </li>
+        <li>
+          <a href="https://github.com/bgongre/OMDBMovieSearch/tree/master/movie_search_app">
+          <img src="http://res.cloudinary.com/bgongre/image/upload/v1517843877/MovieSearch_vh7lax.jpg" alt="OMDB Movie Search">
+        </a>
+        </li>
+        <li>
+          <a href="https://github.com/bgongre/YelpCamp">
+          <img src="http://res.cloudinary.com/bgongre/image/upload/v1517851766/YelpCamp_shomdc.jpg" alt="YelpCamp Project (Currently in Progress)">
+        </a>
+        </li>
+      </ul>
+    </section>
+  </article>
+<!--Work History-->
+  <div id="work-history">
+    <article id="resume">
       <div class="wrapper">
-        <div id="leftcolumn">
-          <p><b>Assurant Inc, Remote Technical Support</b></p>
-          <p>April 2017 - Present</p>
-        </div>
-        <div id="rightcolumn">
-          <div>
+        <h3>Work Experience</h3>
+        <section>
+          <div class="col employers">
+            <h4>Assurant</h4>
+            <h4>Technical Support Operations</h4>
+            <p>April 2017 - Present</p>
+          </div>
+          <div class="col description">
+            <p>Assurant supports some of the world's most recognizable brands, helping them solve their business challenges by providing insurance and customer support. </p>
             <ul>
               <li>Remote support of mobile devices for customers of T-Mobile, US Cellular, and Comcast.</li>
               <li>Technical support via Intercom, phone call, and email.</li>
@@ -62,19 +59,16 @@
               <li>Add articles to knowledge base in Microsoft Dynamics.</li>
               <li>Supporting customers with in home Smart Devices such as August Smart Lock, Philips Hue, LIFX, Amazon Echo, Google Home, as well as others.</li>
             </ul>
-            <hr>
           </div>
-        </div>
-      </div>
-      <div class="wrapper">
-        <div id="leftcolumn">
-          <div>
-            <p><b>G2 Innovative Solutions, Contract IT Specialist James A. Haley Veterans Hospital</b></p>
-            <p>August 2011 - Novemeber 2016</p>
+        </section>
+        <section>
+          <div class="col employers">
+            <h4>G2 Innovative Solutions, Inc.</h4>
+            <h4>Contract IT Specialist</h4>
+            <p>August 2011 - Novmber 2016</p>
           </div>
-        </div>
-        <div id="rightcolumn">
-          <div>
+          <div class="col description">
+            <p>G2 Innovative Solutions provides a wide range of administrative, program management, and information technology services to the Federal Government. </p>
             <ul>
               <li>Updating and patching Windows Server 2008/2012R2.</li>
               <li>Creating, moving, swapping reservations in DHCP.</li>
@@ -83,7 +77,7 @@
               <li>Account management, email creation, distribution groups, security groups, and folder permissions in Acitve Directory.</li>
               <li>Opening and patching switch ports, cable management in switch closets.</li>
               <li>Knowledge of working with relational databases in Microsoft Access, managing and adding information, creating queries, forms, lists, and report creation.</li>
-              <li>Installing and resolving issues with Windows XP, Windows 7, Windows 8/8.1, Windows 10, on both PC and laptop</li>
+              <li>Installing and resolving issues with Windows XP, Windows 7, Windows 8/8.1, Windows 10, on both PC and laptop.</li>
               <li>Installing and resolving issues on Macintosh Mavericks, Yosemite, and El Capitan on both iMac and MacBook.</li>
               <li>Installing and troubleshooting PGP Encryption, Centrify, and Absolute Agent on MacBooks.</li>
               <li>Troubleshooting and installing peripheral devices such as printers, scanners, and deskside fax machines.</li>
@@ -95,84 +89,117 @@
               <li>Ticket logging through Remedy and CA Ticket Manager.</li>
               <li>Creating, reviewing, and updating technical documentation on shared drive.</li>
             </ul>
-            <hr>
           </div>
+        </section>
+      </div>
+    </article>
+<!--Skills-->
+    <article id="skillset">
+      <div class="wrapper">
+        <div id="skills">
+          <h3>Skills</h3>
+          <section>
+            <div class="col employers">
+              <h4>Technical Skills</h4>
+            </div>
+            <div class="col description">
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+                <li>jQuery</li>
+                <li>JSON</li>
+                <li>BootStrap</li>
+                <li>Java</li>
+                <li>Node.js</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <div class="col employers">
+              <h4>Software & Frameworks</h4>
+            </div>
+            <div class="col description">
+              <ul>
+                <li>Express</li>
+                <li>Node Package Manager (NPM)</li>
+                <li>Bower</li>
+                <li>MongoDB</li>
+                <li>Git/Github</li>
+                <li>Gimp</li>
+                <li>Atom</li>
+                <li>Sublime</li>
+                <li>Intellij</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <div class="col employers">
+              <h4>Network</h4>
+            </div>
+            <div class="col description">
+              <ul>
+                <li>Windows Server 2008/2012R2</li>
+                <li>DHCP/DNS</li>
+                <li>SCCM 2003/2007</li>
+                <li>Image Deployment</li>
+                <li>Active Directory Management</li>
+                <li>Microsoft Access DB Management</li>
+                <li>VMware Virtual Server Management</li>
+                <li>Switch Port Setup/Removal</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <div class="col employers">
+              <h4>Operation Support</h4>
+            </div>
+            <div class="col description">
+              <ul>
+                <li>Installation Windows XP, 7, 8/8.1, 10</li>
+                <li>Widows PC and Laptop Support</li>
+                <li>Apple iOS, iPad, iMac, and MacBook Support</li>
+                <li>Virus Detection And Removal</li>
+                <li>Equipment Tracking</li>
+                <li>Mobile Device Support, iOS, Android, and Blackberry</li>
+                <li>Airwatch MDM</li>
+              </ul>
+            </div>
+          </section>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="skills-background">
-    <p id="skills"><b><font size="5">Skills</font></b></p>
-    <div class="container" id="skillsList">
-      <div>
-        <p><b><font size="3">Network</font></b></p>
-        <p>Windows Server 2008/2012R2</p>
-        <p>DHCP/DNS</p>
-        <p>SCCM 2003/2007</p>
-        <p>Image Deployment</p>
-        <p>Account Management AD</p>
-        <p>Switch Port Setup/Removal</p>
-        <p>Cable Management</p>
-        <p>Microsoft Access Relational DB</p>
-        <p>VMWare Virtual Server Management</p>
-      </div>
-      <div>
-        <p><b><font size="3">Operations</font></b></p>
-        <p>Installation Windows XP, 7, 8/8.1, 10</p>
-        <p>Troubleshooting Windows XP, 7, 8/8.1, 10</p>
-        <p>Windows PC and Laptop support</p>
-        <p>Machintosh iOS, iPad, iMac, and MacBook support</p>
-        <p>Virus Detection and Removal</p>
-        <p>Equipment Tracking</p>
-        <p>Mobile Device support, iOS, iPad, Android, and Blackberry</p>
-        <p>AirWatch MDM</p>
-      </div>
-      <div>
-        <p><b><font size="3">Front End/Back End</font></b></p>
-        <p>HTML5</p>
-        <p>CSS3</p>
-        <p>JavaScript</p>
-        <p>jQuery</p>
-        <p>BootStrap</p>
-        <p>Java</p>
-        <p>Intellij</p>
-        <p>jGrasp</p>
-      </div>
-    </div>
-  </div>
-  </div>
-  <div id="education">
-    <div class="educationbackground">
-      <div class="whitespacetop">
-        <!--
-    -->
-        <div class="educationinfo">
-          <div>
-            <h3><b>EDUCATION</b></h3>
-            <hr>
-            <p>Hillsborough Community College A.S.</p>
-            <p>University of South Florida B.S. Information Technology (In Progress)</p>
-          </div>
+    </article>
+<!--Education-->
+    <article id="edu">
+      <div class="wrapper">
+        <div id="education">
+          <h3>Education</h3>
+          <h4>Hillsborough Community College</h4>
+          <h5>A.S. emphasis in Computer Science</h5>
+          <h4>University of South Florida</h4>
+          <h5>B.S. in Information Technology (in progress)</h5>
         </div>
       </div>
-    </div>
+    </article>
   </div>
-  <div class="contact-background">
-    <div id="contact">
-      <h3>What Else Would You Like To Know?</h3>
-      <hr>
-      <div>
-        <p><b>Email:</b><a href="https://mail.google.com/mail/?view=cm&fs=1&to=brittani.gongre@gmail.com"><b>Brittani.Gongre@gmail.com</b></a></p>
-        <div class="resume">
-          <p><b>Resume:</b>
-            <a href="https://www.linkedin.com/in/brittani-gongre-2b82b982"><i class="fab fa-linkedin fa-2x"></i></a></p>
-        </div>
-      </div>
+<!--Contact-->
+  <article id="contact">
+    <div class="wrapper">
+      <h3>Contact</h3>
+      <p>
+        <span>E-Mail:</span>
+        <a class="email" href="mailto:brittani.gongre@gmail.com">Brittani.Gongre@gmail.com</a>
+      </p>
+      <p>
+        <span>LinkedIn:</span>
+        <a class="linkedin" href="https://www.linkedin.com/in/brittani-gongre-2b82b982/"><i class="fab fa-linkedin fa-2x"></i></a>
+      </p>
+      <p>
+        <span>GitHub:</span>
+        <a class="github" href="https://github.com/bgongre"><i class="fab fa-github fa-2x"></i></a>
+      </p>
     </div>
-  </div>
-  <footer>
-    <p>Written and Coded by Brittani Gongre</p>
-  </footer>
+  </article>
 </body>
 
 </html>
