@@ -1,216 +1,238 @@
-/* Global */
-
-/* #F3EFE0, C8D8C6 */
-body {
-  background: #F4F9F4;
-  font-size: 1.4em;
-  font-family: 'Open Sans', sans-serif;
+* {
   margin: 0;
   padding: 0;
 }
 
-img {
-  vertical-align: middle;
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+  display: block;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2em;
 }
 
 h1 {
-  margin-top: 0;
+  display: inline;
 }
 
-.wrapper {
-  width: 50%;
-  padding: 20px;
-  margin: 0 auto;
+h3 {
+  font-family: inherit;
+  font-size: 35px;
+  font-weight: 300;
+  margin: 0 auto 80px;
 }
 
-.col {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  vertical-align: top;
-}
-
-.employers {
-  width: 30%;
-  margin-right: 10px;
-}
-
-.description {
-  width: 60%;
-}
-
-/* Intro */
-
-#intro {
-  background: url('http://res.cloudinary.com/bgongre/image/upload/v1517776815/ChattahoocheeRiverOpacity_iqj5mf.png') no-repeat center top fixed;
-  background-size: cover;
-  text-align: center;
-  height: 100vh;
-}
-
-#intro h1 {
-  font-size: 4em;
-  padding-top: 40vh;
-}
-
-/* Samples */
-#projects {
-  background-color: #C4E3CB;
-  text-align: center;
-  color: #333A56;
-  padding: 100px 0;
-}
-
-#projects ul {
-  list-style: none;
-  padding: 0;
-}
-
-#projects li {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  vertical-align: middle;
-}
-
-#sites h2 {
-  padding-bottom: 50px;
-}
-
-#sites li {
-  margin-left: 15px;
-  margin-bottom: 20px;
-}
-
-#sites img {
-  width: 200px;
-}
-
-#sites img{
-  width: 400px;
-  height: 250px;
-  margin: 0;
-  padding-left: 30px;
-  float: left;
-}
-
-/* Work-History */
-#work-history h3 {
-  text-transform: uppercase;
-  font-size: 1.5em;
-  font-weight: normal;
-  border-bottom: solid 1px #000;
+h3 span {
+  border-bottom: 1px solid;
   padding-bottom: 10px;
 }
 
-#work-history h4 {
-  margin: 0;
-  margin-bottom: 10px;
+div {
+  display: block;
 }
 
-#work-history h5 {
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 10px;
+section {
+  display: block;
 }
 
-/* Resume */
-#resume {
-  padding: 100px 0;
-  color: #000;
+.fullscreen {
+  background: url('http://res.cloudinary.com/bgongre/image/upload/v1525360275/deskdark_x27h50.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
 }
 
-#resume section {
-  border-bottom: solid 1px #ccc;
-  margin-top: 10px;
-  padding: 10px 0;
+.fullscreen header {
+  padding-top: 60px;
+  width: 100%;
 }
 
-#resume h3, #resume h4 {
-  color: #333A56;
+.scrolling-nav li {
+  margin: 5px;
+  border: 2px solid transparent;
+  transition: border .5s;
+  border-radius: 3px;
+  display: inline-block;
 }
 
-#resume p, #resume li {
-  font-size: 0.7em;
+.scrolling-nav li a {
+  color: #FFF;
+  padding: 10px;
 }
 
-#resume ul {
-  padding-left: 16px;
+.scrolling-nav li.active {
+  border-color: #FFF;
 }
 
-/* Skills & Education */
-#skillset {
-  background: #C4E3CB;
-  background-size: 100% auto;
-  padding: 100px 0 50px;
+.scrolling-nav li:active, .scrolling-nav li:hover, .active {
+  border-color: #FFF;
 }
 
-#skillsset h3, #skillset h4, #education h3, #education h4 {
-  color: #333A56;
+.name-box {
+  padding-top: 30vh;
 }
 
-#skills section {
-  margin-bottom: 15px;
+.name {
+  border: 3px solid #FFF;
+  padding: 5px 3px;
+  color: #FFF;
+  font-size: 80px;
 }
 
-#skills ul {
-  column-count: 3;
-  padding: 0;
+.below-fullscreen {
+  position: absolute;
+  top: 100%;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  text-align: center;
+  color: #2c3e51;
+  width: 100%;
 }
 
-#skills li {
-  list-style: none;
-  color: #000;
+.below-fullscreen section {
+  padding: 90px 20px 120px;
 }
 
-#edu {
-  margin: 0;
-  background-color: #8AAE92;
-  background-size: 100% auto;
+.below-fullscreen .paragraphs a {
+  font-size: 1em;
 }
 
-#education {
-  padding: 50px 0;
+.below-fullscreen section ul.paragraphs li, .below-fullscreen section ul.skills li {
+  margin: 0 30px;
 }
 
-#education h5, #education h4 {
-  padding-bottom:10px;
-  font-size: 0.8em;
+.below-fullscreen section ul.paragraphs li+li, .below-fullscreen section ul.skills li+li {
+  margin-top: 50px;
 }
 
-/* Contact */
-#contact {
-  background: #616161;
-  padding: 50px 0;
-  color: #F5F5F5;
+.below-fullscreen section ul.paragraphs li>p, .below-fullscreen section ul.skills li>p {
+  max-width: 560px;
+  line-height: 34px;
+  margin: 0 auto;
 }
 
-#contact h3 {
-  border-bottom: 1px solid #000;
+.below-fullscreen section ul.paragraphs li>p span, .below-fullscreen section ul.skills li>p span {
+  display: block;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-#contact p {
+.below-fullscreen section ul.paragraphs li>p span:first-child, .below-fullscreen section ul.skills li>p span:first-child {
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 2px;
+}
+
+.below-fullscreen section ul.paragraphs li>p span:last-child, .below-fullscreen section ul.skills li>p span:last-child {
+  font-size: 22px;
+}
+
+.below-fullscreen .code-img {
+  width: 100%;
+  height: 100vh;
+}
+
+.below-fullscreen section.inverted {
+  background-color: #182a3d;
+  color: #FFF;
+}
+
+.below-fullscreen section .row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.below-fullscreen section .row+.row {
+  margin-top: 40px;
+}
+
+.below-fullscreen section .row {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.below-fullscreen section .row .project {
+  padding-left: 1.2em;
+}
+
+.below-fullscreen section .row .project img {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.below-fullscreen .paragraphs a, .below-fullscreen section .row .project footer a, .below-fullscreen section .more-portfolio a, .below-fullscreen footer a {
+  color: #e74a64;
+}
+
+.below-fullscreen section .row .project footer span:first-child {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 15px;
+  line-height: 60px;
+}
+
+.below-fullscreen section .row .project footer {
+  position: relative;
+  top: -10px;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  height: 60px;
+  width: 100%;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-color: #FFF;
+  text-align: left;
+}
+
+
+.below-fullscreen section .more-portfolio, .below-fullscreen>footer {
+  font-family: inherit;
   font-size: 25px;
-  margin-left: 40px 0;
+  font-weight: 300;
+  margin: 60px 0 0;
 }
 
-#contact span {
-  font-weight: bold;
+.below-fullscreen section .more-portfolio a {
+  font-size: 1.1em;
 }
 
-#contact a {
-  text-decoration: none;
+.below-fullscreen>footer {
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 300;
+  padding: 70px 0 90px;
 }
 
-.email {
-  color: #000;
-  font-weight: bold;
+.below-fullscreen footer a {
+  font-size: 1.1em;
 }
 
-.linkedin {
-  color: #0077B5;
+.below-fullscreen footer .social a {
+  padding: 1.1em;
 }
 
-.github {
-  color: #000;
+.below-fullscreen>footer hr {
+  width: 100px;
+  margin: 50px auto;
 }
