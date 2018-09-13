@@ -113,11 +113,7 @@ section {
 }
 
 .below-fullscreen section {
-  padding: 100px 20px 150px;
-}
-
-.skills-title {
-  margin: 0 auto 70px;
+  padding: 100px 20px 100px;
 }
 
 .below-fullscreen .paragraphs a {
@@ -340,6 +336,6 @@ section {
 @media (min-width: 1200px) {
   ul {margin: 0;}
   .introduction {padding: 100px 20px 100px !important; margin: 0 30%;}
-  .skills {padding: 100px 20px 100px !important; margin: 0 10%;}
-  .skills-title {margin: 0;}
+  .skills {margin: 0 10%;}
+  .skills-title {margin: 60px;}
 }
