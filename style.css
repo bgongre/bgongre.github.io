@@ -121,7 +121,7 @@ section {
 }
 
 .skills-title {
-  padding-bottom: 50px;
+  padding-bottom: 50px !important;
 }
 
 .below-fullscreen section ul.paragraphs li, .below-fullscreen section ul.skills li {
