@@ -120,6 +120,10 @@ section {
   font-size: 1em;
 }
 
+.skills-title {
+  padding-bottom: 50px;
+}
+
 .below-fullscreen section ul.paragraphs li, .below-fullscreen section ul.skills li {
   margin: 0 30px;
 }
